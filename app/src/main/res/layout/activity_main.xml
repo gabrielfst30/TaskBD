@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Nome"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/Edit_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoCorrect" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Idade"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/Edit_idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Temperatura Corporal"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/Edit_temperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Período (em dias) com tosse"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/Edit_tosse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Período (em dias) com enxaqueca"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+
+        <EditText
+            android:id="@+id/Edit_enxaqueca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Visitou algum desses países nas ultimas duas semanas?"
+            android:textColor="#E400EC"
+            android:textSize="14sp"/>
+
+        <CheckBox
+            android:id="@+id/italia"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Itália" />
+
+        <CheckBox
+            android:id="@+id/china"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="China" />
+
+        <CheckBox
+            android:id="@+id/indonesia"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Indonésia" />
+
+        <CheckBox
+            android:id="@+id/portugal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Portugal" />
+
+        <CheckBox
+            android:id="@+id/estados_unidos"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Estados Unidos" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Há quantas semanas esses países foram visitados?"
+            android:textColor="#E400EC"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Edit_visitados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/botao"
+            android:layout_marginTop="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:onClick="Enviar"/>
+
+    </LinearLayout>
+
+</ScrollView>
